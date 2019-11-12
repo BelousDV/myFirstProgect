@@ -4,6 +4,12 @@
         padding-left: 10px;
         padding-right:0px;
     }
+    .history__wrapper{
+        background-size: 50%;
+    }
+    .history__form{
+        margin-left: 0;
+    }
 }
 @media(max-width: 1400px){
     .popularity__wrapper{
@@ -20,7 +26,6 @@
     .popularity__inner {
         align-items: center;
         flex-direction: column-reverse;
-       /* min-height: 1270px;*/
     }
     .popularity__right {
         max-width: 768px;
@@ -38,6 +43,38 @@
     }
     .popularity__box-text{
         margin-right: 0px;
+    }
+    .history{
+        padding-top: 80px;
+        background-color: #f6f9f3;
+    }
+    .history__wrapper{
+        background-image: none;
+    }
+    .history__title{
+        text-align: center;
+    }
+    .history__title,
+    .history__text{
+        max-width: 100%;
+        padding-top:0px;
+    }
+    .history__form{
+        max-width: 100%;
+        background-color: #fff;
+        padding-top:30px;
+        padding-left: 45px;
+        padding-right: 50%;
+        position: relative;
+    }
+    .history__form::after{
+        content: ' ';
+        width: 352px;
+        height: 420px;
+        background-image: url(../images/alonco_tablet.png);
+        position: absolute;
+        top: 0;
+        right: 15px;
     }
     
 }
@@ -144,9 +181,20 @@
         font-size:14px;
     }
     .top__images{
-        background-image: url(images/top-tablet_bg.jpg);
+        background-image: url(../images/top-tablet_bg.jpg);
         min-height: 544px;
         max-width: 768px;
+    }
+    .popularity__wrapper .container-fluid{
+        padding: 10px;
+    }
+    .popularity__wrapper{
+        background-image: url(../images/popularity_tablet.jpg);
+        min-height: 1222px;
+        background-size: contain;
+    }
+    .popularity__right-title{
+        margin-top: 0px;
     }
 }
 @media(max-width: 740px){
@@ -167,13 +215,16 @@
     .header__text{
         display:none;
     }
+    .popularity__wrapper {
+        min-height: 1168px;
+    }
 }
 @media(max-width: 600px){
     .header__inner {
         height: 65px;
     }
     .top__images{
-        background-image: url(images/top-mobail_bg.jpg);
+        background-image: url(../images/top-mobail_bg.jpg);
         min-height: 375px;
         max-width: 600px;
     }
@@ -279,8 +330,31 @@
         border-bottom: none;
     }
    .tabs__reviews-link{
-       left: 30%;
+        left: 30%;
    } 
+   .popularity__wrapper {
+        min-height: 1020px;
+    }
+    .popularity__right-title {
+        line-height: 30px;
+        font-size: 24px;
+    }
+   .popularity__box {
+        width: 100%;
+        bottom: 7%;
+    }
+   .popularity__box-text {
+        border: none;
+   }
+   .popularity__box-link{
+       left:0;
+       width: 100%;
+       text-align: center;
+       padding: 22px 0px;
+   }
+   .popularity__box-link:after{
+       display: none;
+   }
 }
 @media(max-width: 480px){
     .container {
@@ -352,4 +426,55 @@
     .list__link a::after{
         display: none;
     }
+    .popularity{
+        padding-top: 60px;
+    }
+    .popularity__right{
+        padding:0px;
+    }
+    .popularity__right-subtitle {
+        padding: 25px 0px;
+    }
+    .popularity__right-list{
+        min-width: 300px;
+        width: 100%;
+    }
+    .popularity__right-list li {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    .popularity__right-list li:before{
+        top: 20%;
+    }
+    .popularity__wrapper{
+        background-image: url(../images/popularity_mobail.jpg);
+        background-size: contain;
+        min-height: 841px;
+    }
+    .popularity__box-link{
+        display: none;
+    }
+    .popularity .mobile__link-btn{
+        display:block;
+        margin-top: 25px;
+    }
+    .popularity__wrapper {
+        min-height: 895px;
+        background-position-y: 74%;
+    }
+    .popularity__box{
+        padding: 0px;
+        bottom: 0%;
+    }
+    .popularity__box-text {
+        font-size: 14px;
+        text-align: center;
+    }
 }
+/*@media (max-width: 320px){
+    .popularity__wrapper {
+        min-height: 900px;
+        background-position-y: 74%;
+    }
+}*/

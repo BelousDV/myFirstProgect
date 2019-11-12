@@ -491,6 +491,9 @@ body{
     padding: 20px;
     background-color: #fff;
 }
+.popularity .mobile__link-btn{
+    display:none;
+}
 .popularity__box-text{
     border: 1px solid #c8dcba;
     padding: 30px;
