@@ -884,7 +884,8 @@ ul.composition__box-list{
     text-transform: uppercase;
     line-height: 22px;
     letter-spacing: 1px;
-    padding: 122px 122px 45px 40px;
+    /*padding: 122px 122px 45px 40px;*/
+    padding: 45% 44% 17% 16%;
 }
 
 .reviews{
