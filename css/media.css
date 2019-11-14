@@ -223,6 +223,9 @@
     .author span{
         font-size: 12px;
     }
+    .reviews {
+        margin-bottom: 75px;
+    }
     .reviews__link {
         justify-content: flex-end;
         margin: 25px 0px 0px 0px;
@@ -239,6 +242,15 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+    .creature__inner {
+        justify-content: space-evenly;
+    }
+    .creature__right {
+        padding: 65px;
+    }
+    .creature__right .wrapper {
+        width: 642px;
     }
 }
 @media(max-width: 768px){
@@ -344,7 +356,6 @@
         top: 27px;
         right: 30px;
     }
-    
     .reviews__title{
         font-size: 30px;
         line-height: 40px;
@@ -366,7 +377,12 @@
         width: 100%;
         padding-left: 45px;
     }
-
+    .creature__wrapper {
+        background-image: none;
+    }
+    .creature__inner {
+        margin-top: 0px;
+    }
 }
 @media(max-width: 740px){
     .top__inner-img img{
@@ -446,6 +462,34 @@
         text-align: center;
     }
     .reviews__link-btn a:after{
+        display: none;
+    }
+    .creature__right .wrapper {
+        width: 100%;
+        padding-bottom: 125px;
+    }
+    .creature__right {
+        padding: 30px;
+    }
+    .creature__right-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .creature__link-btn {
+        width: 100%;
+        left: 0;
+        right: 0; 
+        bottom: 0;
+        text-align: center;
+    }
+    .creature__link-btn a{
+        font-size: 12px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-right: 25px;
+    }
+    .creature__link-btn a:after{
         display: none;
     }
 }
@@ -800,6 +844,7 @@
     }
     .composition__item{
         width: 100%;
+        margin-bottom: 10px;
     }
     .composition__box-title{
         font-size: 24px;
@@ -821,6 +866,7 @@
     }
     .reviews{
         margin-top: 60px;
+        margin-bottom: 175px;
     }
     .reviews__inner{
         padding: 0px;
@@ -843,6 +889,28 @@
     .reviews__link {
         position: absolute;
         left: 0;
+    }
+    .creature__right {
+        padding: 0px;
+    }
+    .creature__right .wrapper {
+        padding: 65px 10px 100px 10px;
+        position: absolute;
+        left: 0;
+        border: none;
+    }
+    .creature__right-title {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .creature__right-text{
+        font-size: 14px;
+    }
+    .creature__right-text .term{
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        font-size: 12px;
     }
 }
 /*@media (max-width: 320px){
