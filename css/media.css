@@ -106,17 +106,23 @@
         max-width: 50%;
         padding-left: 40px;
     }
-    .composition__item {
+    .composition__item{
         width: 24%;
         margin-right: 2px;
     }
-    .composition__item-inner {
+    .composition__item-inner{
         width: 100%
     }
-    .composition__link {
+    .composition__link{
         padding-right: 70px;
         margin-left: 10px;
         max-width: 74%;
+    }
+    .creature__wrapper {
+        min-height: 100%; 
+}
+    .certificate__content{
+        padding-left: 0px;
     }
 }
 @media(max-width: 1040px){
@@ -148,6 +154,19 @@
     }
     .list__link{
         justify-content: center;
+    }
+    .certificate__title{
+        margin-bottom: 45px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .certificate__block fieldset {
+        margin-right: 15px;
+    }
+    .footer__link-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
 @media(max-width: 940px){
@@ -246,11 +265,39 @@
     .creature__inner {
         justify-content: space-evenly;
     }
-    .creature__right {
+    .creature__right{
         padding: 65px;
     }
-    .creature__right .wrapper {
+    .creature__right .wrapper{
         width: 642px;
+    }
+    .certificate__title{
+        text-align: center;
+    }
+    .certificate{
+        padding-top: 50px;
+    }
+    .certificste__inner{
+        display: block;
+        height: 100%;
+    }
+    .certificate__content{
+        max-width: 100%;
+        margin-right: 0px;
+    }
+    .certificate_text{
+        padding-right: 0;
+        text-align: center;
+    }
+    .certificate__block fieldset {
+        margin-right: 15px;
+    }
+    .certificate__images{
+        position: static;
+        text-align: center;
+    }
+    .certificate__images img{
+        padding: 25px;
     }
 }
 @media(max-width: 768px){
@@ -304,13 +351,12 @@
     .item__content-img.first{
         margin-bottom: 15px;
     }
-    .composition__row {
+    .composition__row{
         justify-content: space-around;
     }
-    .composition__box {
+    .composition__box{
         max-width: 70%;
         order: -1;
-        
     }
     .composition__box-title{
         font-size: 30px;
@@ -373,15 +419,38 @@
     .review-tab-item.active-review-tab.reviews__location-es{
         flex-direction: column;
     }
-    .review-tab-item li {
+    .review-tab-item li{
         width: 100%;
         padding-left: 45px;
     }
-    .creature__wrapper {
+    .creature__wrapper{
         background-image: none;
     }
-    .creature__inner {
+    .creature__inner{
         margin-top: 0px;
+    }
+    .certificate__content{
+        padding: 0px 15px;
+    }
+    .certificate_text {
+        padding-right: 12%;
+        padding-left: 12%;
+    }
+    .certificate__block{
+        float: left;
+    }
+    .certificate__block{
+        float: right;
+        width: 54%;
+    }
+    .certificate__block fieldset{
+        padding: 30px 20px 100px 35px;
+    }
+    .certificste_desc{
+        display: none;
+    }
+    .certificste_tablet{
+        display: block;
     }
 }
 @media(max-width: 740px){
@@ -432,28 +501,28 @@
     .composition__link-btn{
         right: 50%;
     }
-    .composition__link-btn a {
+    .composition__link-btn a{
         padding: 20px 0px 20px 45px;
     }
-    .composition__link-btn a:after {
+    .composition__link-btn a:after{
         display: none;
     }
-    .reviews__link {
+    .reviews__link{
         margin: 0px;
         text-align: center;
     }
-    .reviews__link-all {
+    .reviews__link-all{
         margin: 0px;
     }
-    .reviews__link-wrapp {
+    .reviews__link-wrapp{
         margin: 20px 0px;
         width: 100%;
         padding: 0px;
     }
-    .reviews__link-btn {
+    .reviews__link-btn{
         position: unset;
     }
-    .reviews__link-btn a {
+    .reviews__link-btn a{
         font-size: 12px;
         padding: 23px 20px 23px 20px;
         background-color: #7eb252;
@@ -471,11 +540,11 @@
     .creature__right {
         padding: 30px;
     }
-    .creature__right-title {
+    .creature__right-title{
         font-size: 24px;
         line-height: 30px;
     }
-    .creature__link-btn {
+    .creature__link-btn{
         width: 100%;
         left: 0;
         right: 0; 
@@ -491,6 +560,27 @@
     }
     .creature__link-btn a:after{
         display: none;
+    }
+    .certificate__block .composition__link-btn{
+        right: 0;
+    }
+    .certificste_tablet{
+        width: 45%;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .footer__phone{
+        display: none;
+    }
+    .footer__link-wrapper{
+        margin: 5px auto;
+    }
+    .footer{
+        clear: both;
+    }
+    .footer__inner{
+        height: 120px;
     }
 }
 @media(max-width: 600px){
@@ -606,18 +696,18 @@
    .tabs__reviews-link{
         left: 30%;
    } 
-   .popularity__wrapper {
+   .popularity__wrapper{
         min-height: 1020px;
     }
-    .popularity__right-title {
+    .popularity__right-title{
         line-height: 30px;
         font-size: 24px;
     }
-   .popularity__box {
+   .popularity__box{
         width: 100%;
         bottom: 7%;
     }
-   .popularity__box-text {
+   .popularity__box-text{
         border: none;
    }
    .popularity__box-link{
@@ -663,7 +753,7 @@
         width: 60%;
         left: 20%;
     }
-    .quote__inner {
+    .quote__inner{
         font-size: 14px;
         line-height: 24px;
         padding: 10px 13px;
@@ -676,7 +766,7 @@
         padding-left: 0px;
         max-width: 75%;
     }
-    .items__title {
+    .items__title{
         padding: 90px 0px;
         font-size: 24px;
         line-height: 30px;
@@ -684,7 +774,7 @@
     .composition__box-list li{
         font-size: 14px;
     }
-    .items__inner {
+    .items__inner{
         flex-direction: column;
     }
     .item {
@@ -705,6 +795,25 @@
     }
     .composition__link-text p{
         margin-bottom: 50px;
+    }
+    .certificate__content{
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .certificate__block{
+        clear: both;
+        width: 100%;
+        order: 3;
+    }
+    .certificste_tablet{
+        width: initial;
+        padding: 5px;
+        margin: 0px auto;
+    }
+    .certificate__block .composition__link-btn a{
+        text-align: center;
+        left: 0;
     }
 }
 @media(max-width: 480px){
@@ -783,14 +892,14 @@
     .popularity__right{
         padding:0px;
     }
-    .popularity__right-subtitle {
+    .popularity__right-subtitle{
         padding: 25px 0px;
     }
     .popularity__right-list{
         min-width: 300px;
         width: 100%;
     }
-    .popularity__right-list li {
+    .popularity__right-list li{
         margin-bottom: 20px;
         padding-left: 20px;
         font-size: 14px;
@@ -818,7 +927,7 @@
         padding: 0px;
         bottom: 0%;
     }
-    .popularity__box-text {
+    .popularity__box-text{
         font-size: 14px;
         text-align: center;
     }
@@ -864,6 +973,9 @@
     .composition__link-btn a{
         padding: 20px 0px;
     }
+    .creature{
+        min-height: 620px;
+    }
     .reviews{
         margin-top: 60px;
         margin-bottom: 175px;
@@ -883,23 +995,23 @@
         padding: 25px 35px 0px 0px;
         font-size: 10px;
     }
-    .review-tab-item li {
+    .review-tab-item li{
         padding: 20px 0px 0px;
     }
-    .reviews__link {
+    .reviews__link{
         position: absolute;
         left: 0;
     }
-    .creature__right {
+    .creature__right{
         padding: 0px;
     }
-    .creature__right .wrapper {
+    .creature__right .wrapper{
         padding: 65px 10px 100px 10px;
         position: absolute;
         left: 0;
         border: none;
     }
-    .creature__right-title {
+    .creature__right-title{
         margin-bottom: 25px;
         text-align: center;
     }
@@ -911,6 +1023,33 @@
         margin-bottom: 25px;
         margin-top: 25px;
         font-size: 12px;
+    }
+    .certificate__title{
+        margin-bottom: 25px;
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .certificate__content{
+        padding: 0px;
+    }
+    .certificate_text{
+        margin-bottom: 30px;
+        padding: 0px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: .5px;
+    }
+    .certificate__block fieldset legend{
+        text-align: center;
+    }
+    .certificate__block{
+        background-color: #f6f9f3;
+        margin-top: 10px;
+    }
+    .certificate__block fieldset{
+        margin-right: 0px;
+        margin-left: 0px;
+        border: none;
     }
 }
 /*@media (max-width: 320px){

@@ -1110,6 +1110,12 @@ div.reviews-location-itemlain{
     font-weight: 700;
     text-transform: uppercase;
 }
+.certificate__block{
+    background-color: #fff;
+}
+.certificste_tablet{
+    display: none;
+}
 .certificate__images{
     position: relative;
     top:-180px;
